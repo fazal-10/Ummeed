@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/machine.png" />
+    <title>Ummeed Sivan Classes</title>
+    <!-- typing animation -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        .fontFam {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* rounded image */
+        .imgR {
+            border-radius: 50px;
+        }
+
+        .writer {
+            font-family: 'Andika', sans-serif;
+            display: inline-block;
+        }
+
+        .writer-text {
+            display: inline-block;
+            overflow: hidden;
+            letter-spacing: 2px;
+            animation: typing 5s steps(30, end), blink .75s step-end infinite;
+            white-space: nowrap;
+            border-right: 4px solid purple;
+            box-sizing: border-box;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0%
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: purple;
+            }
+        }
+    </style>
+</head>
+
+<body class="fontFam">
+    <div id="home">
+        <div class="logo absolute w-[75px] m-[-7px]">
+            <img class="hover:animate-spin" src="img/logo.png" alt="logo">
+        </div>
+        <nav class="nav bg-gradient-to-r from-[#86cef5] to-[#f59ddf] flex p-4 text-white">
+            <ul class="flex space-x-8 ml-20">
+                <li class="cursor-pointer hover:text-purple-600 hover:underline-offset-4 hover:underline"><a
+                        href="#home" class="text-xl hover:font-bold">Home</a></li>
+                <li class="cursor-pointer hover:text-purple-600 hover:underline-offset-4 hover:underline"><a
+                        href="#about" class="text-xl hover:font-bold">About Us</a></li>
+                <li class="cursor-pointer hover:underline-offset-4 hover:text-purple-600 hover:underline"><a
+                        href="#contact" class="text-xl hover:font-bold">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="title relative writer">
+            <img class="blur-[2px] opacity-40" src="img/title-bg.jpg" alt="sivan-bg">
+            <div
+                class="text absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-lg text-[#2a4eb1]">
+                <h1 class="writer-text text-center text-6xl mb-9 animate-none">Ummeed Sivan Classes</h1>
+                <h1 class="text-center text-3xl mb-5">One Of The Best Sivan Classes in Godhra</h1>
+                <h1 class="text-center text-2xl">For Girls & Women</h1>
+            </div>
+        </div>
+        <!-- caraousel start-->
+        <!-- caraousel end-->
+        <section id="about" class="about bg-gradient-to-r from-[#77bfe7] to-[#f0aee0]">
+            <h1 class="font-bold text-4xl text-center mb-6 pt-10">About Us</h1>
+            <!-- card start -->
+            <!-- card-1 -->
+            <div class="card flex justify-center">
+                <a href="#"
+                    class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[500px]">
+                    <!-- try -->
+                    <div class="temp flex flex-col w-[500px]">
+                        <img class="imgR object-cover w-full h-96 md:h-auto md:w-48 pl-2"
+                            src="img/IMG_20220526_124641.jpg" alt="">
+                        <p class="mt-2 font-semibold text-lg text-center text-gray-700 dark:text-gray-400">Afsana
+                            Mansuri
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Learn From The
+                            Best</h5>
+                        <!-- <p class="mb-3 font-semibold text-lg text-gray-700 dark:text-gray-400">Afsana Mansuri</p> -->
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">She is an expert in this field. She
+                            is
+                            running Sivan Classes for more than 5 years. In past, She also worked as a Teacher at Sivan
+                            classes run by Government Institution</p>
+                    </div>
+                </a>
+            </div>
+            <!-- card-2 -->
+            <div class="card flex justify-center mt-8">
+                <a href="#"
+                    class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[500px]">
+                    <img class="object-cover w-full h-96 md:h-auto md:w-48" src="img/learn.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">About Course
+                        </h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">The ideal duration of the course is
+                            3
+                            months, but you can finish it before 3 months or if you are more interested to learn about
+                            new
+                            patterns then you can also continue the course after 3 months.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- card-3 -->
+            <div class="card flex justify-center mt-8">
+                <a href="#"
+                    class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[500px]">
+                    <img class="object-cover w-full h-96 md:h-auto md:w-48 p-6" src="img/time.png" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Class Timings
+                        </h5>
+                        <p class="mb-3 text-gray-700 dark:text-gray-400 font-semibold">Monday To Friday</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">12:00 PM to 2:00 PM</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2:00 PM to 4:00 PM</p>
+                        <small>You can attend any one of the class as per your choice.</small>
+                    </div>
+                </a>
+            </div>
+            <!-- card-4 -->
+            <div class="card flex justify-center mt-8">
+                <a href="#"
+                    class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-[500px]">
+                    <img class="object-cover w-full h-96 md:h-auto md:w-48" src="img/address.png" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Location</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hill Park Society,Near Vadodara
+                            Highway,Godhra,Gujarat</p>
+                    </div>
+                </a>
+            </div>
+            <!-- card end -->
+    </div>
+    <section id="contact" class="contact bg-sky-300 bg-gradient-to-r from-[#77bfe7] to-[#f0aee0]">
+        <h1 class="font-bold text-4xl text-center mb-6 pt-20">Contact Us</h1>
+        <div class="image_contact flex p-2 space-x-6 justify-center cursor-pointer">
+            <div class="flex flex-row space-x-2">
+                <img class="h-11" src="img/call.png" alt="">
+                <p class="pt-[9px] hover:font-bold">+91 9712014441</p>
+            </div>
+            <div class="flex flex-row space-x-3">
+                <img class="h-11" src="img/email.webp" alt="">
+                <p class="pt-[9px] hover:font-bold">ummeedclasses11@gmail.com</p>
+            </div>
+            <div class="flex flex-row space-x-2">
+                <a href="#" title="#"><img class="h-10" src="img/insta.png" alt=""></a>
+                <p class="pt-[9px] hover:font-bold">@ummeed_classes</p>
+            </div>
+            <div class="flex flex-row space-x-3">
+                <a href="#" title="#"><img class="h-11" src="img/fb.png" alt=""></a>
+                <p class="pt-[9px] hover:font-bold">ummeed_classes</p>
+            </div>
+            <div class="flex flex-row space-x-3">
+                <a href="#" title="#"><img class="h-11" src="img/twitter.png" alt=""></a>
+                <p class="pt-[9px] hover:font-bold">@ummeed_classes</p>
+            </div>
+        </div>
+        <div class="tq text-center font-bold text-2xl mt-10 mb-10">Thanks For Visiting!</div>
+        <footer class="text-center p-2 font-bold bg-gradient-to-r from-[#0089d3] to-[#fa6dd7]">
+            Ummeed Sivan Classes &copy; All Rights Reserved
+        </footer>
+        </div>
+</body>
+
+</html>
